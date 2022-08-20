@@ -39,8 +39,8 @@
                         <input id="clothesInputField" type="text"
                             class="focus:outline-none bg-fuchsia-100 mx-3 px-2 mb-5">
                     </div>
-                    <button
-                        class="bg-white bg-opacity-30 shadow-sm shadow-black font-bold px-6 py-2 rounded-full text-white block mx-auto">Calculate
+                    <button id="calculate-btn"
+                        class="bg-white bg-opacity-30 shadow-sm shadow-black font-bold px-6 py-2 rounded-full hover:bg-blue-300 text-white block mx-auto">Calculate
                     </button>
                     <h4 class="mt-7 text-white text-center font-semibold text-xl">Total Expenses: <span
                             id="total-expenses">0</span></h4>
@@ -51,20 +51,23 @@
                     <label for="saveInputField" class="text-white">Save:</label>
                     <input id="saveInputField" type="text" class="w-6/12 focus:outline-none bg-fuchsia-100 mr-3 px-2">
                     <span class="text-white">%</span>
-                    <button
-                        class="bg-white bg-opacity-30 shadow-sm shadow-black font-bold px-6 py-2 ml-2 rounded-full text-white">Save
+                    <button id="save-btn"
+                        class="bg-white bg-opacity-30 shadow-sm shadow-black font-bold px-6 py-2 ml-2 rounded-full hover:bg-blue-300 text-white">Save
                     </button>
                 </div>
                 <div>
-                    <h4 class=" text-white text-center font-semibold text-xl">Total Expenses: <span
+                    <h4 class=" text-white text-center font-semibold text-xl">Saving Amount: <span
                             id="saveAmount">0</span></h4>
-                    <h4 class="mb-7 text-white text-center font-semibold text-xl">Balance: <span
+                    <h4 class="mb-7 text-white text-center font-semibold text-xl">Remaining Balance: <span
                             id="remBalance">0</span>
                     </h4>
                 </div>
             </div>
         </div>
     </section>
+
+    <script src="js/calculation.js"></script>
+    <script src="js/app.js"></script>
 </body>
 
 </html>
