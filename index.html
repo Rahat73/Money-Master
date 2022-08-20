@@ -6,10 +6,65 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Money-Master</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
-
+<body class="bg-[url('images/bg-image.jpg')] bg-cover bg-no-repeat">
+    <section class="grid grid-cols-2 w-4/5 mx-auto">
+        <div class="flex">
+            <img class="rounded-lg h-5/6 my-auto opacity-90" src="images/apnaSapnaMoneyMoney.png"
+                alt="apnaSapnaMoneyMoney">
+        </div>
+        <div class="my-auto">
+            <div
+                class="flex flex-col items-center bg-slate-300 bg-opacity-10 bg-clip-padding backdrop-filter backdrop-blur-sm rounded-2xl shadow-md shadow-black">
+                <div>
+                    <h4 class="my-7 text-white text-center font-semibold text-xl">Income</h4>
+                    <div class="flex justify-end">
+                        <label for="incomeInputField" class="text-white">Income:</label>
+                        <input id="incomeInputField" type="text"
+                            class="focus:outline-none bg-fuchsia-100 mx-3 px-2 mb-5">
+                    </div>
+                    <h4 class="my-7 text-white text-center font-semibold text-xl">Expenses</h4>
+                    <div class="flex justify-end">
+                        <label for="foodInputField" class="text-white">Food:</label>
+                        <input id="foodInputField" type="text" class="focus:outline-none bg-fuchsia-100 mx-3 px-2 mb-5">
+                    </div>
+                    <div class="flex justify-end">
+                        <label for="rentInputField" class="text-white">Rent:</label>
+                        <input id="rentInputField" type="text" class="focus:outline-none bg-fuchsia-100 mx-3 px-2 mb-5">
+                    </div>
+                    <div class="flex justify-end">
+                        <label for="clothesInputField" class="text-white">Clothes:</label>
+                        <input id="clothesInputField" type="text"
+                            class="focus:outline-none bg-fuchsia-100 mx-3 px-2 mb-5">
+                    </div>
+                    <button
+                        class="bg-white bg-opacity-30 shadow-sm shadow-black font-bold px-6 py-2 rounded-full text-white block mx-auto">Calculate
+                    </button>
+                    <h4 class="mt-7 text-white text-center font-semibold text-xl">Total Expenses: <span
+                            id="total-expenses">0</span></h4>
+                    <h4 class="mb-7 text-white text-center font-semibold text-xl">Balance: <span id="balance">0</span>
+                    </h4>
+                </div>
+                <div class="mb-6">
+                    <label for="saveInputField" class="text-white">Save:</label>
+                    <input id="saveInputField" type="text" class="w-6/12 focus:outline-none bg-fuchsia-100 mr-3 px-2">
+                    <span class="text-white">%</span>
+                    <button
+                        class="bg-white bg-opacity-30 shadow-sm shadow-black font-bold px-6 py-2 ml-2 rounded-full text-white">Save
+                    </button>
+                </div>
+                <div>
+                    <h4 class=" text-white text-center font-semibold text-xl">Total Expenses: <span
+                            id="saveAmount">0</span></h4>
+                    <h4 class="mb-7 text-white text-center font-semibold text-xl">Balance: <span
+                            id="remBalance">0</span>
+                    </h4>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 
 </html>
